@@ -1,142 +1,91 @@
-# 2020cce
-
-# 第一周實習課程式
-## 進階題1：分式化簡
+3-1
 ```c
 #include <stdio.h>
+int a[5]={0,10,20,30,40};
 int main()
 {
-	int a,b;
-	scanf("%d%d",&a,&b);
-	int d=a,e=b;
-	if(a<b)
-	{
-		int t=a;
-		a=b;
-		b=t;
-	}
-	int c=a%b;
-	while(c!=0)
-	{
-		a=b;
-		b=c;
-		c=a%b;
-	}
-	printf("%d %d\n",d/b,e/b);
+	int *p= & a[2];
+	*p=222;
+
+	p=p+2;
+	*p=666;
 }
 ```
-## 進階題2：讀入整數反序列印
+![](https://i.imgur.com/h42w95P.png)
+
+3-2
 ```c
 #include <stdio.h>
+int a[5]={0,10,20,30,40};
+void printAll()
+{
+	for(int i=0;i<5;i++)
+	{
+		printf("%d",a[i]);
+	}
+}
 int main()
 {
-	int a[20],b=0;
-	for(int i=1;i<20;i++)
+	int *p= & a[2];
+	*p=222;
+	printAll();
+
+	p=p+2;
+	*p=666;
+	printAll();
+
+	p--;
+	*p=555;
+	printAll();
+}
+```
+![](https://i.imgur.com/78mMwsK.png)
+
+3-3
+```c
+#include <stdio.h>
+int a[10]={0,10,20,30,40.50.60.70.80.90};
+void printAll()
+{
+	for(int i=0;i<10;i++)
 	{
-		scanf("%d",&a[i]);
-		if(a[i]==0) break;
-		b++;
-	}
-	for(int i=b;i>0;i--)
-	{
-		printf("%d ",a[i]);
+		printf("%d",a[i]);
 	}
 	printf("\n");
 }
-```
-## 進階題3：A的B次方函數
-```c
-#include <stdio.h>
-int MYPOWER(int a,int b)
+int main()
 {
-	int A=1;
-	for(int i=1;i<=b;i++)
-	{
-		A*=a;
-	}
-	return A;
-}
-int main(void)
-{
-	int a,b;
-	scanf("%d%d",&a,&b);
-	printf("[%d]",MYPOWER(a,b));
+	int *p= & a[2];
+	*p=200;
+	printAll();
+
+	int *p2=p+4;
+	*p=666;
+	printAll();
+
+	p2--;
+	*p2=555;
+	printAll();
+
 	return 0;
 }
 ```
-## 進階題4：漸增數列相加
+![](https://i.imgur.com/iMx1pVg.png)
+
+3-4
 ```c
 #include <stdio.h>
+#include <stdlib.h>
+
+int a[10];
 int main()
 {
-	int a,b,A=0;
-	scanf("%d",&a);
-	for(int i=1;i<a;i++)
-	{
-		b=i*(i+1);
-		A+=b;
-	}
-	printf("%d\n",A);
+	int b[10];
+
+	int *p=(int*)malloc(sizeof(int)*10);
+
+	return 0;
 }
 ```
-## 基礎題1：找零錢
-```c
-#include <stdio.h>
-int main()
-{
-	int a;
-	scanf("%d",&a);
-	int b=a/50;
-	int c=a%50/5;
-	int d=a%50%5;
-	printf("%d=50*%d+5*%d+1*%d\n",a,b,c,d);
-}
-```
-## 基礎題2：因數個數
-```c
-#include <stdio.h>
-int main()
-{
-	int a,b=0;
-	scanf("%d",&a);
-	for(int i=1;i<=a;i++)
-	{
-		if(a%i==0) b++;
-	}
-	printf("%d\n",b);
-}
-```
-## 基礎題3：找倍數
-```c
-#include <stdio.h>
-int main()
-{
-	int a[10],b=0;
-	for(int i=0;i<10;i++)
-	{
-		scanf("%d",&a[i]);
-		if(a[i]%3==0)
-		{
-			b++;
-		}
-	}
-	printf("%d\n",b);
-}
-```
-## 基礎題4：整數轉換為等級
-```c
-#include <stdio.h>
-int main()
-{
-	int a[10],b=0;
-	for(int i=0;i<10;i++)
-	{
-		scanf("%d",&a[i]);
-		if(a[i]%3==0)
-		{
-			b++;
-		}
-	}
-	printf("%d\n",b);
-}
-```
+![](https://i.imgur.com/2PruwtF.png)
+[](https://)
