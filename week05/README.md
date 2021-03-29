@@ -15,6 +15,7 @@ int main()
     printf("\n");
 }
 ```
+![](https://i.imgur.com/7MISTPd.png)
 5-1
 ```c
 #include <stdio.h>
@@ -26,6 +27,8 @@ int main()
     printf("%s\n",line2);
 }
 ```
+![](https://i.imgur.com/lVSMOiQ.png)
+
 5-2
 ```c
 #include <stdio.h>
@@ -43,6 +46,8 @@ int main()
     printf("你相信嗎? 這是 line4:==%s==\n",line4);
 }
 ```
+![](https://i.imgur.com/W2rMYZi.png)
+
 5-3
 ```c
 #include <stdio.h>
@@ -56,6 +61,8 @@ int main()
     }
 }
 ```
+![](https://i.imgur.com/d2OWUxY.png)
+
 5-4
 ```c
 #include <stdio.h>
@@ -72,3 +79,4 @@ int main()
     }
 }
 ```
+![](https://i.imgur.com/kzEf3jN.png)
