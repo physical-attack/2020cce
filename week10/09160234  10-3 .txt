@@ -1,0 +1,23 @@
+#include <stdio.h>
+char line[10000];
+int A[26];
+int main()
+{
+	int a;
+	scanf("%d\n",&a);
+	
+	for(int i=0;i<a;i++)
+	{
+		gets(line);
+		for(int k=0;line[k]!=0;k++)
+		{
+			char c=line[k];
+			if(c>='A'&&c<='Z') A[c-'A']++;
+			else if(c>='a'&&c<='z') A[c-'a']++;
+		}
+	}
+	for(int i=0;i<26;i++)
+	{
+		printf("%c %d\n",'A'+i,A[i]);
+	}
+}

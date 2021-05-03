@@ -1,0 +1,13 @@
+#include <stdio.h>
+char line[10000];
+int main()
+{
+	int a;
+	scanf("%d\n",&a);
+	
+	for(int i=0;i<a;i++)
+	{
+		gets(line);
+		printf("%s\n",line);
+	}
+}
