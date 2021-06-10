@@ -12,6 +12,7 @@ void draw()
 }
 ```
 ![](https://i.imgur.com/tVFZP8W.png)
+
 16-2
 ```c
 void setup()
@@ -31,6 +32,7 @@ void draw()
 }//   圖心  寬,高 始  終
 ```
 ![](https://i.imgur.com/qYXXL4h.png)
+
 16-3
 ```c
 void setup()
@@ -51,6 +53,7 @@ void draw()
 }//   圖心  寬,高 始  終
 ```
 ![](https://i.imgur.com/BjAUUMx.png)
+
 16-4
 ```c
 void setup()
@@ -77,6 +80,7 @@ void draw()
 }
 ```
 ![](https://i.imgur.com/Xh8b1LC.png)
+
 16-5
 ```c
 void setup()
@@ -103,6 +107,7 @@ void draw()
 }
 ```
 ![](https://i.imgur.com/0ps0lPW.png)
+
 16-6
 ```c
 void setup()
@@ -133,6 +138,7 @@ void draw()
 }
 ```
 ![](https://i.imgur.com/q33QNtf.png)
+
 16-7
 ```c
 void setup()
@@ -166,6 +172,7 @@ void draw()
 }
 ```
 ![](https://i.imgur.com/p3eBYyG.png)
+
 16-8
 ```c
 void setup()
